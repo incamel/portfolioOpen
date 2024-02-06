@@ -1,0 +1,52 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import "./header"; 
+@import "./footer";
+
+//버튼
+
+.buybtn{
+    display: flex;
+height: 44px;
+padding: 12px 22px;
+justify-content: center;
+align-items: center;
+border-radius: 500px;
+background: #0071E3;
+color: #ffffff;
+font-size: 14px;
+font-weight: 500;
+margin: 0 auto;
+cursor: pointer;
+@include mobile{
+    margin: 0px;
+}
+&:hover{
+    background-color: #0077ed;
+}
+}
+
+.default_btn{
+    display: flex;
+// width: 240px;
+height: 56px;
+padding: 0px 20px;
+justify-content: center;
+align-items: center;
+// padding: 0px 10px;
+gap: 15px;
+
+border-radius: 32px;
+background: rgba(232, 232, 237, 0.70);
+box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.11) inset;
+backdrop-filter: blur(3.5px);
+span{
+    width: 38px;
+    height: 36px;
+    background: url(../images/icon/plus_btn.svg) no-repeat;
+}
+}
+
+//애니메이션
+.wrap_up{
+    opacity: 0;
+}

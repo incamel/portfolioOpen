@@ -1,0 +1,120 @@
+@import "./mixin";
+
+header .gnb {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 11px 0px;
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+
+    @include mobile {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+
+    .ing_header {
+        display: flex;
+        position: fixed;
+        padding: 14px;
+        top: 0;
+        left: 0;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        background-color: rgba(251, 251, 253, 0.7);
+        border-bottom: 1px solid rgba(29, 29, 31, 0.1);
+        backdrop-filter: blur(10px);
+        z-index: 9999;
+        transform: translateY(-100%);
+
+
+        >.flex {
+            max-width: 980px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 19px;
+            font-weight: 600;
+            color: #333333;
+
+            @include mobile {
+                font-size: 12px;
+            }
+
+            .flex {
+                gap: 20px;
+                align-items: center;
+
+                @include mobile {
+                    gap: 10px;
+                }
+
+                .buybtn {
+                    font-size: 10px;
+                    height: 0;
+                    padding: 12px 10px;
+                }
+
+                a {
+                    font-size: 11px;
+                    opacity: 0.8;
+
+                    @include mobile {
+                        font-size: 9px;
+                    }
+
+                    &:hover {
+                        color: #0066cc;
+
+                        @include mobile {
+                            color: #111111;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+
+        // white-space: nowrap;
+        @include mobile {
+            display: none;
+        }
+
+        a {
+            color: #333333;
+            font-size: 11px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+    }
+
+    .customer {
+        img {
+
+            vertical-align: middle;
+        }
+    }
+}
+
+header .trade {
+    background-color: #F5F5F7;
+    padding: 26px 30px;
+    color: #1D1D1F;
+    font-size: 11px;
+    text-align: center;
+
+    p:nth-child(2) {
+        margin-top: 5px;
+    }
+}

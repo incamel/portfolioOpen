@@ -1,0 +1,253 @@
+footer {
+    width: 100%;
+    background-color: #F5F5F7;
+    float: left;
+}
+
+
+footer nav {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    font-size: 12px;
+    gap: 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.16);
+    padding-top: 30px;
+
+    @include mobile {
+        display: block;
+        padding: 0px 14px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        @include mobile {
+            gap: 0;
+            
+        }
+
+        h3 {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.88);
+        }
+
+        a {
+            color: rgba(0, 0, 0, 0.72);
+        }
+    }
+}
+
+
+/* 화살표 */
+.column .arrow {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    margin: 0 12px;
+    cursor: pointer;
+
+    @include mobileup {
+        display: none;
+    }
+}
+
+.arrow span {
+    top: 3px;
+    position: absolute;
+    width: 7px;
+    height: 1px;
+    background-color:rgba(0, 0, 0, 0.88);
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.arrow span:first-of-type {
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.arrow span:last-of-type {
+    right: 0;
+    transform: rotate(-45deg);
+}
+
+.arrow.active span:first-of-type {
+    transform: rotate(-45deg);
+}
+
+.arrow.active span:last-of-type {
+    transform: rotate(45deg);
+}
+
+/* .arrow--l-r */
+.arrow--l-r {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    margin: 0 12px;
+}
+
+.arrow--l-r.left span:nth-child(4),
+.arrow--l-r.left span:nth-child(5) {
+    transform: rotate(-45deg);
+}
+
+.arrow--l-r.right span:nth-child(1),
+.arrow--l-r.right span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.arrow--l-r span {
+    position: absolute;
+    height: 1px;
+    background-color: #efefef;
+    transition: transform 0.2s ease;
+}
+
+.arrow--l-r span:nth-child(1),
+.arrow--l-r span:nth-child(2),
+.arrow--l-r span:nth-child(4),
+.arrow--l-r span:nth-child(5) {
+    width: 6px;
+    top: 6px;
+}
+
+.arrow--l-r span:nth-child(1) {
+    right: 0;
+    transform-origin: bottom right;
+}
+
+.arrow--l-r span:nth-child(2) {
+    right: 0;
+    transform-origin: top right;
+}
+
+.arrow--l-r span:nth-child(3) {
+    width: 12px;
+    top: 6px;
+}
+
+.arrow--l-r span:nth-child(4) {
+    left: 0;
+    transform-origin: bottom left;
+}
+
+.arrow--l-r span:nth-child(5) {
+    left: 0;
+    transform-origin: top left;
+}
+
+
+.column ul {
+    // height: 0;
+    overflow: hidden;
+    @include mobile {
+        height: 0;
+        // transition:  1s ;
+    }
+}
+
+.column .flex {
+    display: flex;
+    align-items: center;
+    @include mobile{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+        // border-top: 1px solid rgba(0, 0, 0, 0.16);
+    }
+h3{
+    padding: 10px 0px;
+    font-weight: 500;
+    font-size: 11px;
+    color: #111111;
+    @include mobile{
+        color: rgba(0, 0, 0, 0.88);
+        // color: rgba(0, 0, 0, 0.72);
+        // color: rgba(0, 0, 0, 0.16);
+    }
+}
+    @include mobile {
+        justify-content: space-between;
+
+    }
+}
+
+.column ul li {
+    margin-top: 8px;
+    // height: 0px;
+    // overflow: hidden;
+    :hover{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    @include mobile{
+        padding-left: 10px;
+        &:last-child{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+            padding-bottom: 8px;
+        }
+    }
+}
+
+footer .copyright {
+    font-size: 11px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    @include mobile{
+        margin-top: 30px;
+    padding: 0px 14px;
+
+    }
+
+    >span {
+
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+        padding-bottom: 20px;
+
+        span {
+            a{
+                
+                color: rgb(0, 102, 204);
+                display: inline;
+            }
+                
+        }
+    }
+
+    div {
+        float: left;
+        padding-top: 20px;
+        @include mobile{
+            margin-bottom: 14px;
+        }
+
+        span {
+            font-size: 11px;
+            margin-right: 30px;
+            color: rgba(0, 0, 0, 0.72);
+            @include mobile{
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        a {
+            margin-right: 9px;
+            color: rgba(0, 0, 0, 0.72);
+        }
+    }
+
+    address {
+        padding-top: 20px;
+        float: right;
+        color: rgba(0, 0, 0, 0.72);
+        @include mobile{
+        }
+    }
+}

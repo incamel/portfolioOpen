@@ -1,0 +1,1288 @@
+@import "./mixin";
+
+main {
+
+    // max-width: 1440px;
+    .main_visual {
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        @include mobile {
+            margin-top: 30px;
+        }
+
+        .iphone15 {
+            // max-width: 1024px;
+            position: relative;
+            // height: 700px;
+            margin-bottom: 40px;
+
+            video {
+                width: 100%;
+                // height: 100%;
+                object-fit: fill;
+
+
+                @include mobile {
+                    height: 528px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .price {
+            color: #1D1D1F;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .buybtn {
+            width: 100px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+main .dynamicisland {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 200px;
+
+    @include mobile {
+        // width: 90%;
+        // padding: 0px 50px;
+    }
+
+    h3 {
+        font-size: 52px;
+        color: #1D1D1F;
+
+        @include mobile {
+            text-align: left;
+            font-size: 26px;
+            padding: 0px 30px;
+
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 175px;
+        color: #1D1D1F;
+        font-size: 70px;
+        font-weight: 700;
+
+        @include mobile {
+            text-align: left;
+            font-size: 34px;
+            padding: 0px 30px;
+            margin-top: 50px;
+
+        }
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    p:nth-child(2) {
+        font-size: 18px;
+        margin-top: 35px;
+        font-weight: 600;
+        color: #6E6E73;
+        line-height: 1.6;
+
+        @include mobile {
+            font-size: 16px;
+        }
+
+        span {
+            color: #1D1D1F;
+        }
+
+    }
+}
+
+main .dynamicisland .dy_visual {
+    position: relative;
+    margin-top: 30px;
+    height: 500px;
+    overflow: hidden;
+
+    @include mobile {
+        height: 100%;
+    }
+
+
+
+
+    img {
+        position: absolute;
+
+    }
+
+    .phone {
+        height: 100%;
+        position: relative;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        img {
+            position: absolute;
+
+            // width: 427px;
+            // height: auto;
+            @include mobile {
+                position: static;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+        }
+
+        img:nth-child(1) {
+            width: 427px;
+            height: auto;
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        img:nth-child(2) {
+
+            left: 50%;
+            transform: translateX(-50%);
+            width: 461px;
+            height: auto;
+
+            @include mobile {
+                display: none;
+                transform: none;
+                left: auto;
+                // width: 200px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+        }
+
+        img:nth-child(3) {
+            display: none;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 461px;
+            height: auto;
+
+            @include mobile {
+                display: block;
+                transform: none;
+                left: auto;
+                // width: 200px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+        }
+    }
+
+    .dy_wrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include mobile {
+            display: none;
+        }
+
+
+    }
+
+    .dy_list {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        img {
+            top: 150px;
+            right: 0;
+        }
+
+        img:nth-child(1) {}
+
+        img:nth-child(2) {
+            top: 200px;
+            right: 27px;
+
+        }
+
+        img:nth-child(3) {
+            top: 250px;
+            right: 54px;
+        }
+
+        img:nth-child(4) {
+            top: 300px;
+            right: 81px;
+        }
+
+        img:nth-child(5) {
+            top: 350px;
+            right: 27px;
+        }
+    }
+}
+
+main .video {
+    background-color: #FAFAFB;
+    width: 100%;
+
+    .inner {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-top: 122px;
+
+        @include mobile {}
+
+        h3 {
+            font-size: 68px;
+            color: #1D1D1F;
+
+            @include mobile {
+                font-size: 34px;
+                padding: 0px 30px;
+            }
+        }
+
+        p {
+            width: 485px;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+            color: #1D1D1F;
+            font-weight: 600;
+            line-height: 1.6;
+            text-align: left;
+
+            @include mobile {
+                font-size: 16px;
+                width: auto;
+                padding: 0px 30px;
+                margin-top: 10px;
+
+            }
+
+            span {
+                font-weight: 600;
+                color: #6E6E73;
+            }
+        }
+
+        .video_wrap {
+
+            margin-top: 42px;
+
+            // height: 590px;
+            width: 100%;
+
+            @include mobile {
+                height: 300px;
+            }
+
+            video {
+                width: 100%;
+                object-fit: cover;
+
+                @include mobile {
+                    // width: auto;
+                    height: 100%;
+                }
+            }
+        }
+
+        .function {
+            display: flex;
+            // width: 900px;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 70px;
+            padding-bottom: 60px;
+
+            @include mobile {
+                flex-direction: column;
+                padding: 50px 30px;
+            }
+
+            .function_list {
+                width: 33.333%;
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #1D1D1F;
+
+                }
+
+                p:nth-child(3) {
+                    font-size: 15px;
+                    color: #6E6E73;
+                    margin-top: 7px;
+                    line-height: 1.5;
+                }
+            }
+
+            .function_list:nth-child(1) {
+
+                .img {
+                    background: url(../images/icon/icon_shield.png) center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 50px;
+                    height: 50px;
+
+                    @include mobile {
+                        width: 34px;
+                        height: 34px;
+                        margin: 0px 30px;
+                    }
+                }
+            }
+
+            .function_list:nth-child(2) {
+
+                .img {
+                    background: url(../images/icon/icon_water.png) center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 50px;
+                    height: 50px;
+
+                    @include mobile {
+                        width: 34px;
+                        height: 34px;
+                        margin: 0px 30px;
+                    }
+                }
+            }
+
+            .function_list:nth-child(3) {
+
+                .img {
+                    background: url(../images/icon/icon_enclosure.png) center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 50px;
+                    height: 50px;
+
+                    @include mobile {
+                        width: 34px;
+                        height: 34px;
+                        margin: 0px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main .battery {
+    .inner {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    h3 {
+        margin-top: 350px;
+        text-align: center;
+        font-size: 52px;
+        font-size: 68px;
+        color: #1D1D1F;
+
+        @include mobile {
+            // text-align: left;
+            font-size: 38px;
+            margin-top: 200px;
+        }
+
+        span {
+            @include mobile {
+                padding: 0px 30px;
+                text-align: left;
+                display: block;
+            }
+        }
+    }
+
+    .img_wrap {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 60px;
+
+        @include tablet {
+            // width: 585px;
+        }
+
+        @include mobile {
+            // margin: 0px 0px 0px -15px;
+            // margin-left: -30px;
+        }
+
+        img {
+            position: relative;
+            left: 50%;
+            transform: translatex(-50%);
+
+            @include tablet {
+                // height: 585px;
+                width: 100%;
+            }
+
+            @include mobile {
+                width: 100%;
+                background-size: cover;
+                // height: 270px;
+            }
+        }
+
+        a {
+            position: absolute;
+            display: block;
+            // bottom: 270px;
+            bottom: 35%;
+            left: 50%;
+            font-size: 14px;
+            transform: translatex(-50%);
+            color: #6E6E73;
+
+            @include mobile {
+                font-size: 9px;
+            }
+        }
+    }
+
+    .efficiency {
+        position: relative;
+        bottom: 200px;
+        // max-width: 800px;
+        // width: 100%;
+        margin: 0 auto;
+
+        @include tablet {
+            bottom: 150px;
+        }
+
+        @include mobile {
+            padding: 0px 30px;
+            position: static;
+        }
+
+        div {
+            position: relative;
+            // bottom: 200px;
+            // top: 00px;
+            margin-bottom: 34px;
+
+            p:nth-child(1) {
+                color: #6E6E73;
+                font-size: 18px;
+                font-weight: 700;
+
+                @include mobile {
+                    font-size: 16px;
+                }
+            }
+
+            p:nth-child(2) {
+                color: #1D1D1F;
+                font-size: 64px;
+                font-weight: 700;
+
+                @include mobile {
+                    font-size: 42px;
+                }
+            }
+
+            p:nth-child(3) {
+                color: #6E6E73;
+                font-size: 18px;
+                font-weight: 700;
+
+                @include mobile {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .playtime {
+            width: 266px;
+            border-top: 1px solid #000000;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            @include mobile {
+                position: static;
+            }
+
+            .wrap {
+                margin-left: 10px;
+                margin-top: 20px;
+                display: flex;
+                gap: 50px;
+            }
+
+            .ico {
+                width: 40px;
+                height: 40px;
+                background: url(../images/icon/icon_battery.svg);
+            }
+
+            .txt {
+                font-size: 19px;
+                color: #6E6E73;
+                font-weight: 600;
+                line-height: 1.5;
+
+                // float: right;
+                // position: relative;
+                // bottom: 200px;
+                @include mobile {
+                    font-size: 16px;
+                }
+
+            }
+        }
+    }
+}
+
+main .chip {
+    width: 100%;
+    background-color: #000000;
+    margin-top: 100px;
+
+    h3 {
+        // width: 300px;
+        padding-top: 300px;
+        text-align: center;
+        font-size: 68px;
+        color: #ffffff;
+
+        @include mobile {
+            font-size: 36px;
+            padding: 100px 30px 0px 30px;
+            margin: 0 auto;
+        }
+
+        :first-child {
+            display: block;
+        }
+
+        span {
+            @include mobile {
+                display: block;
+                text-align: left;
+            }
+        }
+    }
+
+    .video_wrap {
+        text-align: center;
+        margin-top: 100px;
+
+        video {
+            width: 100%;
+            object-fit: cover;
+            max-width: 1000px;
+
+        }
+    }
+
+    p {
+        margin-top: 50px;
+        text-align: center;
+        color: #6E6E73;
+        font-size: 19px;
+        line-height: 1.5;
+        letter-spacing: -1px;
+        font-weight: 500;
+
+        @include mobile {
+            text-align: left;
+            padding: 0px 30px;
+        }
+
+        span {
+            color: #ffffff;
+        }
+    }
+
+    .wrap {
+        width: 320px;
+        border-top: 1px solid #ffffff;
+        // margin-left: 10px;
+        // margin-top: 50px;
+        display: flex;
+        gap: 50px;
+        margin: 50px auto;
+        padding-bottom: 200px;
+
+        .ico {
+            margin-top: 30px;
+            width: 40px;
+            height: 40px;
+            background: url(../images/icon/icon_battery_wh.svg);
+        }
+
+        .txt {
+            margin-top: 30px;
+            font-size: 19px;
+            color: #6E6E73;
+            font-weight: 600;
+            line-height: 1.5;
+
+            // float: right;
+            // position: relative;
+            // bottom: 200px;
+            @include mobile {
+                font-size: 16px;
+            }
+
+        }
+    }
+
+}
+
+main .compatibility {
+    .txt {
+        text-align: center;
+        max-width: 980px;
+        margin: 0 auto;
+        left: 50px;
+    }
+
+    h3 {
+        color: #86868b;
+        font-size: 68px;
+
+        @include mobile {
+            font-size: 36px;
+        }
+
+        span {
+            color: #1D1D1F;
+
+            @include mobile {
+                text-align: left;
+                display: block;
+                padding: 0px 30px;
+            }
+        }
+    }
+
+    p {
+        text-align: left;
+        color: #6E6E73;
+        margin-top: 40px;
+        margin-left: 140px;
+
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.5;
+
+        @include mobile {
+            font-size: 16px;
+            margin-left: auto;
+            padding: 0px 30px;
+        }
+
+        span {
+            color: #1D1D1F;
+        }
+    }
+
+    .img_wrap {
+        margin-top: 100px;
+        position: relative; //
+
+        @include mobile {
+            margin-top: 50px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .default_btn {
+            opacity: 0;
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            // top: 100px;
+            // width: 266px;
+            // height: 56px;
+            // margin: 0 auto;
+        }
+
+        img {
+            display: block;
+        }
+    }
+}
+
+main .safe {
+    background-color: #F5F5F7;
+    padding: 100px 0px;
+
+    @include mobile {
+        padding: 30px 0px;
+    }
+
+
+    .default_btn {
+        opacity: 0;
+        position: fixed;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        // top: 100px;
+        // width: 266px;
+        // height: 56px;
+        // margin: 0 auto;
+        z-index: 230;
+    }
+
+    .img_wrap {
+        max-width: 1120px;
+        margin: 100px auto 0px auto;
+        position: relative;
+
+        .img {
+            width: 100%;
+            min-height: 630px;
+            background-image: url(../images/safety.png);
+
+            @include mobile {
+                background-image: url(../images/safety_small.jpg);
+                background-repeat: no-repeat;
+                min-height: 665px;
+            }
+        }
+
+
+
+        p {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            font-weight: 600;
+            letter-spacing: -2px;
+            color: #ffffff;
+            font-size: 58px;
+
+            @include mobile {
+                font-size: 40px;
+            }
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        .info {
+            background-color: #000000;
+            text-align: center;
+            color: #6E6E73;
+            padding: 100px 0px 140px 0px;
+
+            span {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+main .model {
+    background-color: #F5F5F7;
+    padding-top: 260px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 200px;
+
+    // width: 1200px;
+    @include mobile {
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+
+    .title {
+        display: flex;
+        max-width: 1260px;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 0px 30px;
+        }
+
+        span {
+            @include mobile {
+                display: block;
+            }
+        }
+
+        h3 {
+            font-size: 44px;
+            color: #161516;
+
+            @include mobile {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+        }
+
+        span {
+            a {
+
+                color: #0066CC;
+            }
+        }
+    }
+
+    .model_inner {
+        background-color: #ffffff;
+        border-radius: 30px;
+        // padding: 128px 215px;
+        // margin: 0px 300px;
+        max-width: 1260px;
+        margin: 0 auto;
+        padding-top: 90px;
+        padding-bottom: 60px;
+
+        @include mobile {
+            border-radius: 0;
+            padding: 60px 30px 50px 30px;
+        }
+
+    }
+}
+
+main .model .iphone_model {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    @include mobile {
+        gap: 20px;
+    }
+
+
+
+    .iphone15 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mobile {
+            align-items: baseline;
+        }
+
+        .img_wrap {
+            // width: 281px;   레이아웃 넘어가서 
+            // height: 380px;
+
+            @include mobile {
+                // width: 140px;
+                height: auto;
+            }
+
+            img {
+                width: 100%;
+                transition: scale 0.5s;
+                cursor: pointer;
+
+                @include mobile {
+                    // width: 140px;
+                    height: auto;
+                    min-width: 156.45px;
+                    // min-height: 211px;
+                    // min-width: 160px;
+                }
+            }
+
+            img:hover {
+                scale: 1.05;
+            }
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-top: 84px;
+
+            @include mobile {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            &::before {
+                content: "NEW";
+                display: block;
+                text-align: center;
+                font-size: 12px;
+                color: #b64400;
+                font-weight: 500;
+                padding-bottom: 10px;
+
+                @include mobile {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        p {
+            color: #1D1D1F;
+            margin-top: 12px;
+
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+
+        .buybtn {
+            margin-top: 34px;
+            background-color: #ffffff;
+            white-space: nowrap;
+
+            @include mobile {
+                padding: 0px 0px;
+                // margin: 0 0;
+            }
+        }
+
+        a {
+            position: relative;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #0066cc;
+            padding: 12px 0px;
+
+            &:hover::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #0066CC;
+                bottom: 10px;
+                left: 0;
+            }
+        }
+
+        .model_chip {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 147px;
+
+            @include mobile {
+                margin-top: 80px;
+                align-items: baseline;
+            }
+
+            .img {
+                background: url(../images/icon/icon_a16.svg) no-repeat;
+                width: 53px;
+                height: 53px;
+                background-size: contain;
+                background-position: center;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                color: #1D1D1F;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .model_camera {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 50px;
+
+            @include mobile {
+                align-items: baseline;
+            }
+
+            .img {
+                background: url(../images/icon/icon_camera1.png) no-repeat;
+                width: 53px;
+                height: 53px;
+                background-size: contain;
+                background-position: center;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                color: #1D1D1F;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+
+            span {
+                text-align: center;
+                font-size: 12px;
+                color: #1D1D1F;
+            }
+        }
+
+        .model_battery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 50px;
+
+            @include mobile {
+                align-items: baseline;
+            }
+
+            .img {
+                background: url(../images/icon/icon_model_battery.png) no-repeat;
+                width: 53px;
+                height: 53px;
+                background-size: contain;
+                background-position: center;
+
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                color: #1D1D1F;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .iphone15pro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mobile {
+            align-items: baseline;
+        }
+
+        .img_wrap {
+            // width: 281px;
+            // height: 380px;
+
+            @include mobile {
+                // width: 140px;
+                height: auto;
+            }
+
+            img {
+                width: 100%;
+                transition: scale 0.5s;
+                cursor: pointer;
+
+                @include mobile {
+                    // width: 140px;
+                    height: auto;
+                    // min-height: 211px;
+                    // min-width: 160px;
+                    min-width: 156.45px;
+                }
+            }
+
+            img:hover {
+                scale: 1.05;
+            }
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-top: 84px;
+
+            @include mobile {
+                font-size: 20px;
+                font-weight: 500;
+                white-space: nowrap;
+            }
+
+            &::before {
+                content: "NEW";
+                display: block;
+                text-align: center;
+                font-size: 12px;
+                color: #b64400;
+                font-weight: 500;
+                padding-bottom: 10px;
+
+                @include mobile {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        p {
+            color: #1D1D1F;
+            margin-top: 12px;
+
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+
+        .buybtn {
+            margin-top: 34px;
+        }
+
+        a {
+            position: relative;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #0066cc;
+            padding: 12px 0px;
+
+            @include mobile {
+                // margin-top: 20px;
+            }
+
+            &:hover::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #0066CC;
+                bottom: 10px;
+                left: 0;
+            }
+        }
+
+        .model_chip {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 150px;
+
+            @include mobile {
+                margin-top: 78px;
+                align-items: baseline;
+            }
+
+            .img {
+                background: url(../images/icon/icon_a16.svg) no-repeat;
+                width: 53px;
+                height: 53px;
+                background-size: contain;
+                background-position: center;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                color: #1D1D1F;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .model_camera {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 50px;
+
+            @include mobile {
+                align-items: baseline;
+            }
+
+
+            .img {
+                background: url(../images/icon/icon_camera2.png) no-repeat;
+                width: 53px;
+                height: 53px;
+                background-size: contain;
+                background-position: center;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                color: #1D1D1F;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+
+            span {
+                text-align: center;
+                font-size: 12px;
+                color: #1D1D1F;
+            }
+        }
+
+        .model_battery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 50px;
+
+            @include mobile {
+                align-items: baseline;
+            }
+
+            .img {
+                background: url(../images/icon/icon_model_battery.png) no-repeat;
+                width: 53px;
+                height: 53px;
+                background-size: contain;
+                background-position: center;
+
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                color: #1D1D1F;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
