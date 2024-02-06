@@ -1,0 +1,383 @@
+@charset "UTF-8";
+
+#main .m_inner .m_visual img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#main .m_inner .m_visual {
+  width: 100%;
+  height: 100%;
+}
+
+#main .m_inner .m_visual a {
+  background-color: orange;
+}
+
+
+#main .video {
+  background-color: #2F7E3A;
+}
+
+#main .sns {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+  background-color: #2F7E3A;
+  padding: 0px 45px;
+  padding-bottom: 30px;
+}
+
+#main .sns_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px
+}
+
+#main .sns_container a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#main .sns .ico_youtube {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icon/m_youtube2.svg) no-repeat center;
+  background-size: 30px 30px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#main .sns .ico_youtube::after {
+  position: absolute;
+  content: "YOUTUBE";
+  bottom: -33px;
+  font-weight: 700;
+  left: -14px;
+  color: #ffffff;
+}
+
+#main .sns .ico_facebook {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icon/m_facebook2.svg) no-repeat center;
+  background-size: 30px 30px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#main .sns .ico_facebook::after {
+  position: absolute;
+  content: "FACEBOOK";
+  bottom: -33px;
+  font-weight: 700;
+  left: -20px;
+  color: #ffffff;
+}
+
+#main .sns .ico_instagram {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icon/m_instagram2.svg) no-repeat center;
+  background-size: 30px 30px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#main .sns .ico_instagram::after {
+  position: absolute;
+  content: "INSTAGRAM";
+  bottom: -33px;
+  text-align: center;
+  left: -22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+
+#main .use {
+  display: flex;
+  color: #ffffff;
+  font-family: pre;
+}
+
+#main .use .app {
+  position: relative;
+  background-color: #208B3A;
+  width: 50%;
+  height: 320px;
+  padding: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#main .use .app::after {
+  content: "";
+  position: absolute;
+  width: 122.13px;
+  height: 171px;
+  bottom: 0px;
+  right: 0%;
+  background: url(../images/iphone2.png)no-repeat;
+  background-size: 122.13px 171px;
+}
+
+#main .use .app p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 113.7%;
+}
+
+#main .use .app p:nth-child(2) {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+#main .use .app a {
+  position: relative;
+  margin-top: 24px;
+  display: block;
+  border-radius: 9999px;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+}
+
+#main .use .app a::after {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-top: 3px solid #3FA34D;
+  border-right: 3px solid #3FA34D;
+  display: inline-block;
+  transform: rotate(45deg);
+  top: 6.2px;
+  left: 4.5px;
+}
+
+
+#main .use .delivery {
+  position: relative;
+  background-color: #3FA34D;
+  width: 50%;
+  height: 320px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+#main .use .delivery p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 113.7%;
+}
+
+#main .use .delivery p:nth-child(2) {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+#main .use .delivery::after {
+  content: "";
+  position: absolute;
+  width: 116px;
+  height: 86px;
+  bottom: 30px;
+  right: 10%;
+  background: url(../images/icon/img_homesub.png) no-repeat;
+  background-size: 116px 86px;
+}
+
+#main .use .delivery a {
+  position: relative;
+  margin-top: 24px;
+  display: block;
+  border-radius: 9999px;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+}
+
+#main .use .delivery a::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-top: 3px solid #3FA34D;
+  border-right: 3px solid #3FA34D;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 6.2px;
+  left: 5.5px;
+}
+
+
+#main .find_store {
+  text-align: center;
+}
+
+#main .find_store h3 {
+  margin-top: 35px;
+  font-size: 24px;
+  font-weight: 700;
+
+}
+
+#main .find_store p {
+  margin-top: 3px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+#main .find_store>a {
+  margin: 0 auto;
+  display: flex;
+  width: 160px;
+  height: 33px;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99999px;
+  background: #009223;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+
+#main .find_store .category {
+  margin-top: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#main .find_store .category .category_item {
+  position: relative;
+  width: calc(33.333% - 10px);
+  height: 100px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+#main .find_store .category .category_item div {
+  font-weight: 700;
+  font-size: 11px;
+  color: #333333;
+}
+
+#main .find_store .category .category_item:nth-child(1) a::after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../images/icon/quick_01_fast.png) no-repeat center;
+  background-size: contain;
+}
+
+#main .find_store .category .category_item:nth-child(2) a::after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../images/icon/quick_02_home.png) no-repeat center;
+  background-size: contain;
+}
+
+#main .find_store .category .category_item:nth-child(3) a::after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../images/icon/quick_03_group.png) no-repeat center;
+  background-size: contain;
+}
+
+#main .find_store .category .category_item:nth-child(4) a::after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../images/icon/quick_04_subcard.png) no-repeat center;
+  background-size: contain;
+}
+
+#main .find_store .category .category_item:nth-child(5) a::after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../images/icon/quick_06_coupon.png) no-repeat center;
+  background-size: contain;
+}
+
+#main .find_store .category .category_item:nth-child(6) a::after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: url(../images/icon/quick_05_gift.png) no-repeat center;
+  background-size: contain;
+}
+
+#main .delivery_info {
+  background: url(../images/img_sw_artist_point.jpg) no-repeat center;
+  background-size: cover;
+  height: 136px;
+  padding: 20px;
+  color: #ffffff;
+}
+
+#main .delivery_info p:nth-child(1) {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#main .delivery_info p:nth-child(2) {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#main .delivery_info a {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+#main .delivery_info a::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background: url(../images/icon/call_12.48x12.48.svg) no-repeat center;
+}
