@@ -1,0 +1,16 @@
+body {
+    background: #f3f4f5;
+    overflow-x: hidden;
+}
+main {
+    overflow-x: hidden;
+}
+
+@keyframes moveBelt {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

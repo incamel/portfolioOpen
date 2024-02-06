@@ -1,0 +1,871 @@
+@import "../abstracts/mixin";
+
+.wrap_img {
+    position: relative;
+
+    .right_img {
+        position: absolute;
+        right: -300px;
+        width: 300px;
+        z-index: 200;
+
+        @include coustom1600 {
+            right: -150px;
+        }
+
+        @include mobile {
+            top: 100px;
+            width: 150px;
+            right: -25px;
+        }
+
+        @include XSmobile {
+            top: 70px;
+            width: 150px;
+            right: -25px;
+        }
+    }
+
+    .left_img {
+        position: absolute;
+        top: 500px;
+        left: -300px;
+        width: 300px;
+        z-index: 200;
+
+        @include coustom1600 {
+            left: -150px;
+        }
+
+        @include mobile {
+            width: 150px;
+            left: -25px;
+        }
+    }
+
+    img:nth-child(3) {
+        position: absolute;
+        top: 800px;
+        right: -300px;
+        width: 300px;
+        z-index: 200;
+
+        @include coustom1600 {
+            right: -150px;
+        }
+
+        @include mobile {
+            top: 800px;
+            width: 150px;
+            right: -15px;
+        }
+
+        @include XSmobile {
+            top: 860px;
+            width: 150px;
+            right: -25px;
+        }
+    }
+}
+
+.m_visual {
+    width: 100%;
+    height: 800px;
+    background-color: #2AC1BC;
+    min-width: 1200px;
+
+    @include mobile {
+        height: 720px;
+        min-width: initial;
+    }
+}
+
+.m_bg {
+    width: 100%;
+    height: 100%;
+
+    .bg_txt {
+        font-family: 'BMHANNAPro';
+        position: absolute;
+        text-wrap: nowrap;
+        font-weight: 500;
+        font-size: 90px;
+        color: #ffffff;
+        top: 0;
+        margin-top: 70px;
+        left: 0;
+        line-height: 1.1;
+        user-select: none;
+
+        @include mobile {
+            position: static;
+            font-family: 'BMHANNAPro';
+            margin: 40px auto;
+            width: 260px;
+            white-space: nowrap;
+            text-align: left;
+            font-size: 48px;
+        }
+    }
+
+    .phone {
+        position: absolute;
+        right: 0px;
+        bottom: 120px;
+        user-select: none;
+
+        @include mobile {
+            position: static;
+            width: 309px;
+            margin: 0 auto;
+        }
+
+        @include XSmobile {
+            width: 265px;
+        }
+
+        img {
+            width: 300px;
+
+            &:first-child {
+                margin-right: 5px;
+            }
+
+            @include mobile {
+                width: 150px;
+            }
+
+            @include XSmobile {
+                width: 128px;
+            }
+        }
+    }
+
+    .bg_1 {
+        background: url(../images/ride.png) no-repeat;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        rotate: 314deg;
+        margin-top: 70px;
+        top: 154px;
+        left: -85px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.btn_wrap {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    left: 0;
+    bottom: 130px;
+
+    @include mobile {
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .btn:nth-child(1) {
+        background: url(../images/appstore.png) no-repeat center;
+        background-color: #ffffff;
+        background-size: 150px 45px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .btn:nth-child(2) {
+        background: url(../images/googleplay.png) no-repeat center;
+        background-color: #ffffff;
+        background-size: 140px 45px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+}
+
+.bg_item {
+    position: relative;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+
+
+//미리보는 배민
+.m2_prevbemin .m2_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include mobile {
+        min-width: initial;
+    }
+}
+
+.m2_prevbemin .m2_inner .m2_title {
+    margin-top: 100px;
+    text-align: center;
+    color: #232324;
+
+    @include mobile {
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+
+        @include XSmobile {
+            font-size: 18px;
+        }
+    }
+
+    p {
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: 700;
+
+        @include mobile {
+            font-size: 25px;
+        }
+
+        @include XSmobile {
+            font-size: 20px;
+        }
+    }
+}
+
+.m2_prevbemin .m2_inner {
+    position: relative;
+}
+
+.m2_prevbemin .item_container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 46px;
+
+    @include tablet {
+        gap: 20px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.m2_prevbemin .item {
+    width: 337px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {}
+
+    .img_wrap {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50px;
+        box-shadow: 7px 8px 15px -5px rgba(0, 0, 0, 0.30);
+        user-select: none;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .item_txt {
+        text-align: center;
+
+        p:nth-child(1) {
+            margin-top: 32px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        p:nth-child(2) {
+            margin-top: 9px;
+            font-weight: 400;
+            color: #232323;
+        }
+    }
+
+}
+
+//카드 아이템
+.m2_prevbemin .card_container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 80px;
+    padding: 30px 0px;
+
+    @include mobile {
+        margin-top: 56px;
+    }
+}
+
+.m2_prevbemin .card_item {
+
+    .item_txt {
+        p {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        a {
+            background: #FFF;
+            font-weight: 700;
+        }
+
+        @include mobile {
+            p {
+                font-size: 16px;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &:nth-child(1) {
+        position: relative;
+        width: calc(100% - 30px);
+        height: 260px;
+        background-color: #3F67D9;
+        border-radius: 35px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+        @include mobile {
+            height: 170px;
+        }
+
+        .item_txt {
+            position: absolute;
+            top: 25%;
+            right: 10%;
+
+            @include mobile {
+                right: 10%;
+                text-align: end;
+            }
+
+            div {
+                font-size: 18px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+
+            p {
+                margin-top: 10px;
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 51.5px;
+
+                @include mobile {
+                    margin-bottom: 42.5px;
+                }
+            }
+
+            a {
+                padding: 10px 19px;
+                background-color: #ffffff;
+                border-radius: 50px;
+                color: #232324;
+                font-weight: 700;
+                transition: opacity 0.2s;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            @include mobile {
+                div {
+                    font-size: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 31px;
+                }
+
+                a {
+                    padding: 7.25px 13.3px 7.25px 12.7px;
+                }
+            }
+        }
+
+        &::after {
+            display: inline-block;
+            content: "";
+            position: absolute;
+            background: url(../images/card1.png) no-repeat;
+            background-size: 100% 100%;
+            left: 100px;
+            bottom: 0;
+            width: 261px;
+            height: 308px;
+
+            @include tablet {
+                left: 0;
+            }
+
+            @include mobile {
+                width: 130px;
+                height: 154px;
+                left: 0;
+            }
+
+            @include XSmobile {
+                width: 123px;
+                height: 146px;
+                bottom: -43px;
+                background-size: 75% 75%;
+            }
+        }
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        .item_txt {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+
+
+            p {
+                margin-bottom: 61.5px;
+
+                @include mobile {
+                    margin-bottom: 42.5px;
+                }
+            }
+
+            a {
+                padding: 10px 19px;
+                border-radius: 50px;
+                transition: opacity 0.2s;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            @include mobile {}
+        }
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        position: relative;
+        width: calc(50% - 30px);
+        height: 240px;
+        background-color: #2AC1BC;
+        border-radius: 25px;
+        background: #2AC1BC;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        @include mobile {
+            width: calc(100% - 30px);
+            height: 180px;
+        }
+
+        &:nth-child(2)::after {
+            position: absolute;
+            right: 70px;
+            bottom: 0;
+            content: "";
+            display: inline-block;
+            background: url(../images/card2.png) no-repeat;
+            background-size: 100% 100%;
+            width: 146px;
+            height: 225px;
+
+            @include tablet {
+                right: 5%;
+                width: 120px;
+                height: 170px;
+            }
+
+            @include mobile {
+                width: 73px;
+                height: 112px;
+                right: 10%;
+            }
+        }
+
+        &:nth-child(3)::after {
+            position: absolute;
+            right: 55px;
+            bottom: 0;
+            content: "";
+            display: inline-block;
+            background: url(../images/card3.png) no-repeat;
+            background-size: 100% 100%;
+            width: 160px;
+            height: 200px;
+
+            @include tablet {
+                right: 0;
+                bottom: 0px;
+                width: 140px;
+                height: 170px;
+            }
+
+            @include mobile {
+                width: 80px;
+                height: 100px;
+                right: 10%;
+            }
+        }
+    }
+}
+
+.eco {
+    margin: 50px 0px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+
+    img {
+        position: relative;
+        z-index: 200;
+        width: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 8%;
+    }
+
+    .bg_wrap {
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .bg {
+            position: fixed;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../images/bg.png) no-repeat;
+            background-size: cover;
+            background-position: center bottom;
+            transform: translateZ(0);
+
+            @include mobile {
+                background-position: 52% bottom;
+            }
+        }
+    }
+
+
+    .eco_txt {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        color: #ffffff;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        p:nth-child(1) {
+            margin: 30px 0px;
+            font-size: 32px;
+            font-weight: 700;
+
+            @include mobile {
+                font-size: 24px;
+            }
+
+            &:after {
+                display: block;
+                // position: absolute;
+                margin: 0 auto;
+                content: "";
+                width: 112px;
+                height: 150px;
+                background: url(../images/bamin_green2.jpg) no-repeat;
+                // left: 50%;
+                // transform: translateX(-50%);
+            }
+        }
+
+        p:nth-child(2) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.m3_history {
+    .m3_title {
+        margin-top: 80px;
+        text-align: center;
+        color: #232324;
+
+        @include mobile {
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+
+            @include XSmobile {
+                font-size: 18px;
+            }
+        }
+
+        p {
+            font-size: 30px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 50px;
+
+            @include mobile {
+                font-size: 25px;
+                margin-bottom: 25px;
+            }
+
+            @include XSmobile {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.m3_history .swiper {
+    position: relative;
+    overflow: visible;
+    // left: -400px;
+    padding: 0px 100px;
+
+    @include mobile {
+        left: auto;
+        padding: 15px;
+    }
+}
+
+.m3_history .swiper-slide {
+    min-width: 400px;
+
+    @include mobile {
+        min-width: auto;
+        left: auto;
+        padding: 15px;
+    }
+
+    @include XSmobile {
+        min-width: auto;
+        left: auto;
+        padding: 0px;
+    }
+}
+
+
+.m3_history .swiper .swiper-wrapper {
+    display: flex;
+}
+
+.m3_history .swiper-wrapper .swiper-slide {
+    height: 100%;
+
+    .slide_item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_wrap {
+        height: 400px;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s;
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+
+    .slide_txt {
+        margin-top: 30px;
+
+        p:nth-child(1) {
+            font-size: 16px;
+            font-weight: 700;
+            color: #232324;
+        }
+
+        p:nth-child(2) {
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 15px;
+            color: #727D7D;
+        }
+    }
+}
+
+.m4_findfont {
+    height: 640px;
+    margin-top: 150px;
+    background-color: #232324;
+
+    @include mobile {
+        height: 510px;
+        margin-top: 50px;
+    }
+}
+
+.m4_findfont .m4_inner {
+    text-align: center;
+
+    button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 11px;
+        margin-bottom: 64px;
+        font-size: 16px;
+        height: 55px;
+        width: 100px;
+        border-radius: 15px;
+        background: rgba(17, 17, 17, 0.80);
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        a {
+            font-weight: 700;
+            color: #ffffff;
+        }
+    }
+}
+
+.m4_findfont .m4_title {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+
+    @include mobile {
+        padding-top: 50px;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+
+        @include mobile {
+            font-size: 30px;
+        }
+
+        @include XSmobile {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        margin-top: 15px;
+        font-weight: 700;
+        line-height: 1.5;
+
+        @include XSmobile {
+            font-size: 14px;
+        }
+    }
+}
+
+.m4_findfont .font_container {
+    padding: 0px 10px;
+    margin-top: 46px;
+
+    @include mobile {
+        margin-top: 0px;
+    }
+
+    .belt {
+        display: flex;
+        gap: 10px;
+        animation: moveBelt 25s linear infinite;
+
+        @include mobile {
+            animation: moveBelt 20s linear infinite;
+        }
+    }
+
+    .belt:hover {
+
+        animation-play-state: paused;
+
+        @include mobile {
+            animation-play-state: running;
+        }
+    }
+
+}
+
+.font_container .item_container {
+    display: flex;
+    gap: 10px;
+}
+
+.m4_findfont .font_container .font_item {
+    position: relative;
+    flex-shrink: 0;
+    margin: 40px 0px;
+    width: 160px;
+    height: 128px;
+    background-color: #373737;
+    border-radius: 10px;
+
+    .font_title {
+        position: absolute;
+        color: #6c6d6f;
+        font-weight: 700;
+        left: 15px;
+        top: 15px
+    }
+
+    .font_prev {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+}
