@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Thin.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 100;
+ }
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Ultralight.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 200;
+ }
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Light.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 300;
+ }
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Medium.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 400;
+ }
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Regular.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 500;
+    font-style: normal;
+ }
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Semibold.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 600;
+ }
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Bold.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 700;
+ }
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Heavy.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 800;
+ }
+@font-face {
+    font-family: 'SFPro'; /* 폰트 패밀리 이름 설정 */
+    src: url(/fonts/AppleSFPro/SF-Pro-Text-Black.woff2) format('woff2'); /* 폰트 파일 경로 및 형식 지정 */
+    font-weight: 900;
+ }
+
+
+
+
+
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 100;
+    src: url(AppleSDGothicNeoT.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 200;
+    src: url(AppleSDGothicNeoUL.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 300;
+    src: url(AppleSDGothicNeoL.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 400;
+    src: url(AppleSDGothicNeoR.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 500;
+    src: url(AppleSDGothicNeoM.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 600;
+    src: url(AppleSDGothicNeoSB.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 700;
+    src: url(AppleSDGothicNeoB.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 800;
+    src: url(AppleSDGothicNeoEB.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 900;
+    src: url(AppleSDGothicNeoH.woff2) format("woff2");
+}

@@ -1,0 +1,55 @@
+// 분기
+$smallpc: 1601px;
+$custom1100: 1100px;
+$custom1450: 1450px;
+$tablet: 1024px;
+$mobile: 767px;
+$custom360: 360px;
+$XSmobile: 320px;
+
+@mixin lap {
+    @media (max-width: #{$smallpc}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin custom1100 {
+    @media (max-width: #{$custom1100}) {
+        @content;
+    }
+}
+@mixin custom1450 {
+    @media (max-width: #{$custom1450}) {
+        @content;
+    }
+}
+
+@mixin custom360 {
+    @media (max-width: #{$custom360}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin mobileup {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin xsmobile {
+    @media (max-width: #{$XSmobile}) {
+        @content;
+    }
+}

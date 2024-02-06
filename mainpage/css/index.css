@@ -1,0 +1,21 @@
+.fp-watermark {
+  display: none;
+}
+
+section {
+  height: 100%;
+}
+
+
+/*위 공통*/
+
+@media screen {
+  
+}
+
+@media screen and (max-width: 768px) {
+  /* 화면 너비가 768px 이하인 경우에만 적용되는 스타일 */
+  body {
+    background-color: blue;
+  }
+}
