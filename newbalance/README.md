@@ -7,4 +7,4 @@
 기존의 브랜드 `아이덴티티`는 존중하면서도,<br>
 사용자 중심의 친화적인 UI로 리디자인을 진행하였습니다.<br>
 
-<a href='https://inyeob.com/newbalance/'>사이트 바로가기</a>
+<a href='https://inyeob.com/newbalance/'>사이트 바로가기</a> 
