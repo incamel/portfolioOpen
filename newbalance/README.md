@@ -1,6 +1,10 @@
-# 배달의민족 Redesign & Publishing
+# 뉴발란스 Publishing
 
-**배달의민족 홈페이지**를 `figma`활용 리디자인하고 `Vanilla JS 및 Swiper 플러그인`  이용하여 퍼블리싱 했습니다.
+**뉴발란스 메인 페이지입니다.**
 
-<a href='http://incamel.woobi.co.kr/baemin/index.html#none'>사이트 바로가기</a>
+기존의 `적응형` 뉴발란스 홈페이지를<br>
+현대적인 웹 트렌드에 맞게 메인 페이지를 `반응형`으로 재구성하였습니다.<br>
+기존의 브랜드 `아이덴티티`는 존중하면서도,<br>
+사용자 중심의 친화적인 UI로 리디자인을 진행하였습니다.<br>
 
+<a href='https://inyeob.com/newbalance/'>사이트 바로가기</a>
