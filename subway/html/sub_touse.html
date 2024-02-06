@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="keywords" content="써브웨이,서브웨이,subway,온라인 주문,테이크아웃,써브웨이 메뉴,써브웨이 프로모션, 써브웨이 리뷰, 식사 메뉴,샌드위치,공식 홈페이지">
+    <meta name="description" content="하루한끼 맛있게 채소를 먹자, 신선한 샌드위치를 만나보세요.">
+    <!-- 오픈 그래프 -->
+    <meta property="og:title" content="서브웨이 SUBWAY®">
+    <meta property="og:url" content="http://incamel.woobi.co.kr/subway/html/sub_touse.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/8fXh/image/lFczvtndwHT4-7c8JnZEGZgG_RM.png">
+    <meta property="og:description" content="하루한끼 맛있게 채소를 먹자, 신선한 샌드위치를 만나보세요.">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/sub_touse.css">
+    <!-- 스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="../script/swiper.js"></script>
+    <script defer src="../script/main.js"></script>
+    <!-- 타이틀 -->
+    <title>SUBWAY® 써브웨이</title>
+</head>
+
+<body>
+
+    <!--헤더-->
+    <header id="header">
+        <div class="h_inner">
+            <!--로고-->
+            <div class="logo">
+                <h1>
+                    <a href="../index.html">
+                        <img src="../images/Subway_logo_250x50.svg" alt="서브웨이 브랜드 로고">
+                    </a>
+                </h1>
+            </div>
+            <!--네브바-->
+            <nav>
+                <ul>
+                    <li class="main_menu"><a href="sub_menu.html">메뉴소개</a>
+                        <div class="sub_menu">
+                            <ul>
+                                <li><a href="sub_menu.html">샌드위치</a></li>
+                                <li><a href="sub_menu_snackwrap.html">랩·기타</a></li>
+                                <li><a href="sub_menu_salad.html">샐러드</a></li>
+                                <li><a href="sub_menu.html">아침메뉴</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main_menu"><a href="sub_touse.html">이용방법</a>
+                        <div class="sub_menu">
+                            <ul>
+                                <li><a href="sub_touse.html">서브웨이 이용방법</a></li>
+                                <li><a href="sub_touse.html">단체메뉴 이용방법</a></li>
+                                <li><a href="sub_touse.html">App 이용방법</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main_menu"><a href="sub_event.html">새소식</a>
+                        <div class="sub_menu">
+                            <ul>
+                                <li><a href="sub_event.html">이벤트·프로모션</a></li>
+                                <li><a href="sub_event.html">뉴스·공지사항</a></li>
+                                <li><a href="sub_event.html">광고영상</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main_menu"><a href="sub_promise.html">써브웨이</a>
+                        <div class="sub_menu">
+                            <ul>
+                                <li><a href="sub_promise.html">서브웨이 역사</a></li>
+                                <li><a href="sub_promise.html">서브웨이 약속</a></li>
+                                <li><a href="sub_promise.html">매장 찾기</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main_menu"><a href="#none">온라인주문</a>
+                        <div class="sub_menu">
+                            <ul>
+                                <li><a href="#none">FAST-SUB</a></li>
+                                <li><a href="#none">HOME-SUB</a></li>
+                                <li><a href="#none">단체주문</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!--로그인·회원가입-->
+            <div class="customer">
+                <a href="#none">로그인 ·</a>
+                <a href="#none">회원가입</a>
+                <a href="#none">
+                    <div class="customer_icon"></div>
+                </a>
+            </div>
+    </header>
+
+    <!--메인-->
+    <main id="main">
+        <div class="m_inner">
+            <section class="touse">
+
+                <div class="touse_title">
+                    <h2>써브웨이 이용방법</h2>
+                    <p>우리는 더 좋은 써브웨이를 위해 매일 노력합니다.</p>
+                </div>
+
+                <div class="touse_tab">
+
+                    <button id="order_btn">매장에서 주문하기</button>
+                    <button id="tip_btn">주문 TIP</button>
+                </div>
+
+                <div id="tab_order" class="order">
+                    <div class="swiper orderswiper">
+                        <div class="order_pagination"></div>
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="../images/img_store_order01.png" alt="STEP1 메뉴 선택">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/img_store_order02.png" alt="STEP2 빵 선택">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/img_store_order03.png" alt="STEP3 추가토핑 선택">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/img_store_order04.png" alt="STEP4 야채&소스 선택">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/img_store_order05.png" alt="STEP5 세트 선택">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="nextprev_btn">
+                        <div class="orderswiper_prev"></div>
+                        <div class="orderswiper_next"></div>
+                    </div>
+                    <div class="slide_txt">
+                        <div class="step active">
+                            <p>STEP 1</p>
+                            <p>메뉴 선택</p>
+                            <p>메뉴를 고르세요.<br>
+                                샌드위치(15cm 또는 30cm)와<br>
+                                샐러드 중 선택 가능합니다.</p>
+                            <div class="step_btn">
+                                <a href="sub_menu.html">샌드위치 메뉴</a>
+                                <a href="sub_menu_salad.html">샐러드 메뉴</a>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <p>STEP 2</p>
+                            <p>빵 선택 <span>(샐러드 선택 시 제외)</span></p>
+                            <p>매장에서 직접 구운 6가지 종류 중<br>
+                                고객님이 원하는 빵으로<br>
+                                추가비용 없이 선택 가능합니다.</p>
+                            <div class="step_btn">
+                                <a href="sub_menu.html">빵 종류</a>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <p>STEP 3</p>
+                            <p>추가토핑 선택</p>
+                            <p>나만의 메뉴를 더욱 풍성하게 즐기세요.</p>
+                            <div class="step_btn">
+                                <a href="sub_menu.html">추가토핑 메뉴</a>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <p>STEP 4</p>
+                            <p>야채&소스 선택</p>
+                            <p>나만의 스타일을 완성하는 단계!
+                                원하지 않는 야채는 빼고 좋아하는 야채는 더하세요.<br>
+                                오늘의 기분에 맞는 소스를 선택해주세요.</p>
+                            <div class="step_btn">
+                                <a href="sub_menu.html">야채 종류</a>
+                                <a href="sub_menu.html">소스 종류</a>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <p>STEP 5</p>
+                            <p>세트 선택</p>
+                            <p>세트로 구매하시면 할인혜택을<br>
+                                받으실 수 있습니다. 세트로<br>
+                                더욱 든든하고 알차게 즐기세요.</p>
+                            <div class="step_btn">
+                                <a href="sub_menu.html">스마일 썹</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab_tip" class="tip">
+
+                    <div class="tip01">
+                        <div class="tip_bg">
+                            <div class="tip_inner">
+                                <div class="tip_txt">
+                                    <h3 class="tip_txt_title">
+                                        <span>완벽한 한끼</span>를 원하신다면?
+                                    </h3>
+                                    <p>스테이크 & 치즈</p>
+                                    <p>고급스러운 스테이크와 고소하고 진한 치즈의 콜라보<br>
+                                        신선한 야채와 함께 푸짐하고 완벽한 한끼가 완성됩니다!<br>
+                                        다양한 토핑을 추가해 나만의 한끼 메뉴를 즐겨보세요.</p>
+                                </div>
+                                <div class="tip_wrap_img">
+                                    <img src="../images/sub/img_sandwich01.png" alt="스테이크 & 치즈">
+                                </div>
+                                <div class="tip_info">
+                                    <p>더 맛있게 즐기는 <span>TIP</span></p>
+                                    <div class="info_item">
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_cheese.jpg" alt="치즈">
+                                            <p>CHEESE</p>
+                                            <p>더블치즈로 치즈와 쇠고기의<br>
+                                                완벽한 조화!</p>
+                                        </div>
+
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_sauce01.jpg" alt="스윗어니언">
+                                            <p>SAUCE</p>
+                                            <p>달콤하게 즐기고 싶다면 스윗어니언+마요네즈!<br>
+                                                스테이크의 맛을 즐기고 싶다면 후추만 톡톡!</p>
+                                        </div>
+
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_vegetable.jpg" alt="오이">
+                                            <p>VEGETABLE</p>
+                                            <p>토마토, 오이를 넣으면<br>
+                                                고기의 풍미를 즐길 수 있습니다.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tip02">
+                        <div class="tip_bg">
+                            <div class="tip_inner">
+                                <div class="tip_txt">
+                                    <h3 class="tip_txt_title">
+                                        <span>다이어트</span>중이라면?
+                                    </h3>
+                                    <p>로스트치킨</p>
+                                    <p>퍽퍽한 닭가슴살은 이제 그만! <br>
+                                        로스트 치킨 샐러드는 가볍고 든든하게 즐길 수 있습니다.<br>
+                                        샌드위치와 샐러드로 맛있고 든든하게 즐기세요.</p>
+                                </div>
+                                <div class="tip_wrap_img">
+                                    <img src="../images/sub/img_sandwich02.png" alt="로스트치킨">
+                                </div>
+                                <div class="tip_info">
+                                    <p>더 맛있게 즐기는 <span>TIP</span></p>
+                                    <div class="info_item">
+
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_salad.jpg" alt="샐러드">
+                                            <p>SALAD</p>
+                                            <p>로스트치킨은 샐러드로 드셔도 좋습니다.<br>
+                                                관리의 시작은 써브웨이로부터!</p>
+                                        </div>
+
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_sauce02.jpg" alt="랜치소스">
+                                            <p>SAUCE</p>
+                                            <p>랜치로 고소하게 즐겨보세요!</p>
+                                        </div>
+
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_topping.jpg" alt="올리브">
+                                            <p>TOPPING</p>
+                                            <p>올리브, 피클, 할라피뇨를 넣고 드시면,<br>
+                                                담백하고 부드러운 로스트 치킨을<br>
+                                                제대로 즐길 수 있습니다.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tip03">
+                        <div class="tip_bg">
+                            <div class="tip_inner">
+                                <div class="tip_txt">
+                                    <h3 class="tip_txt_title">
+                                        <span>건강</span>을 생각한다면?
+                                    </h3>
+                                    <p>써브웨이 클럽</p>
+                                    <p>고기의 단백질과 야채의 비타민으로 영양UP! <br>
+                                        절임류 야채를 제외해서 더 담백하게, 올리브오일을 넣어 부담은 DOWN!<br>
+                                        써브웨이 클럽으로 건강한 하루를 보내세요.</p>
+                                </div>
+                                <div class="tip_wrap_img">
+                                    <img src="../images/sub/img_sandwich03.png" alt="써브웨이 클럽">
+                                </div>
+                                <div class="tip_info">
+                                    <p>더 맛있게 즐기는 <span>TIP</span></p>
+                                    <div class="info_item">
+
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_cheese.jpg" alt="치즈">
+                                            <p>CHEESE</p>
+                                            <p>더블치즈로 치즈와 터키, 베이컨, <br>
+                                                햄의 완벽한 조화를 느껴보세요!</p>
+                                        </div>
+
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_sauce03.jpg" alt="올리브오일,후추">
+                                            <p>SAUCE</p>
+                                            <p>올리브오일과 후추를 살짝 뿌리면,<br>
+                                                짜지않고 담백한 행복한 맛을 느낄 수 있습니다.</p>
+                                        </div>
+
+                                        <div class="ingredient">
+                                            <img src="../images/sub/img_topping.jpg" alt="올리브">
+                                            <p>TOPPING</p>
+                                            <p>올리브, 피클, 할라피뇨를 넣고 드시면<br>
+                                                야채들의 싱싱한 맛을 하나하나 느끼실 수<br>
+                                                있습니다.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+        <div class="f_inner">
+            <div class="f_logo">
+                <a href="../index.html">
+                    <div class="f_logo2"></div>
+                </a>
+            </div>
+            <div class="f_content">
+                <div>
+                    <a href="#none">이용약관</a>
+                    <strong><a href="#none">개인정보처리방침</a></strong>
+                    <a href="#none">이메일무단수집거부</a>
+                    <a href="#none">고객센터</a>
+                    <a href="#none">Contact Us</a>
+                </div>
+                <div>
+                    <a href="#none">공정거래자율준수 프로그램</a>
+                    <a href="#none">신용정보활용체제</a>
+                    <a href="#none">금융소비자보호</a>
+                </div>
+            </div>
+
+
+            <div class="f_copyright">
+                <p>전자우편 : <a href="mailto:rararayup@gmail.com">rararayup@gmail.com</a> &nbsp; 상호 : SUBWAY®</p>
+                <address>주소 : 서울시 서초구 강남대로 535 프린스빌딩 15층</address>
+                <p>사업자번호 : 101-84-04143</p>
+                <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2023 Subway IP LLC. All Rights Reserved.</p>
+            </div>
+
+            <ul class="f_sns">
+                <li class="ico_youtube"><a href="#none" aria-label="유튜브"></a></li>
+                <li class="ico_instagram"><a href="#none" aria-label="인스타그램"></a></li>
+                <li class="ico_facebook"><a href="#none" aria-label="페이스북"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

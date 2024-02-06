@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.visual_txt {
+  transform: translate(-50%, 50%);
+}
+
+.m_visual ul li:nth-child(1) a {
+  position: relative;
+  color: #ffffff;
+}
+
+.m_visual ul li:nth-child(1) a::after {
+  position: static;
+}
+
+.m_visual ul li:nth-child(2) a {
+  position: relative;
+  color: #ffc300;
+}
+
+.m_visual ul li:nth-child(2) a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  bottom: -12px;
+  background-color: #ffc300;
+}
+
+.m_visual ul li:nth-child(3) a {
+  position: relative;
+  color: #ffffff;
+}
+
+.m_visual ul li:nth-child(3) a::after {
+  position: static;
+}
+
+.m_visual .visual_bg {
+  background-color: #85c441 !important;
+}
+
+.visual .visual_wrap_img.active {
+  transform: translateX(-5%);
+  /* 초기에 이미지를 아래로 숨김 */
+  transition: transform 1s ease;
+}
+
+.visual .visual_wrap_img2.active {
+  transform: translateX(5%);
+  /* 초기에 이미지를 아래로 숨김 */
+  transition: transform 1s ease;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.visual .visual_wrap_img {
+  position: absolute;
+  left: 1280px;
+  bottom: -72px;
+  transform: translateX(0%);
+  width: 100%;
+  height: 100%;
+  background: url(../images/sub/img_visual_wrap01.jpg) no-repeat;
+  z-index: 100;
+}
+
+.visual .visual_wrap_img2 {
+  position: absolute;
+  left: 55px;
+  top: 0px;
+  transform: translateX(0%);
+  width: 100%;
+  height: 100%;
+  background: url(../images/sub/img_visual_wrap02.jpg) no-repeat;
+  z-index: 100;
+}

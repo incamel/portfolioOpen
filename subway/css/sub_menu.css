@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.m_inner {
+  background-color: #f2f2f2;
+}
+
+nav ul li.main_menu:nth-child(1)>a {
+  color: #009223;
+}
+
+.filter_btn.active {
+  color: #009223 !important;
+}
+
+.m_visual.active img {
+  transform: translateY(1%);
+  /* 초기에 이미지를 아래로 숨김 */
+  transition: transform 1s ease;
+}
+
+.m_visual {
+  overflow: hidden;
+  position: relative;
+  height: 380px;
+}
+
+.m_visual ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  z-index: 110;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2901960784);
+  height: 70px;
+}
+
+.m_visual ul li a {
+  display: inline-block;
+  font-weight: 500;
+  padding: 10px;
+  color: #ffffff;
+  height: 100%;
+}
+
+.m_visual ul li:nth-child(1) a {
+  position: relative;
+  color: #ffc300;
+}
+
+.m_visual ul li:nth-child(1) a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  bottom: -12px;
+  background-color: #ffc300;
+}
+
+.m_visual .visual_bg {
+  background-color: #e95b1d;
+  position: absolute;
+  width: 100%;
+  height: 380px;
+  z-index: -1;
+  z-index: 10;
+}
+
+.m_visual img {
+  position: absolute;
+  transform: translateY(100%);
+  /* 초기에 이미지를 아래로 숨김 */
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  z-index: 100;
+}
+
+.m_visual .visual_txt {
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  z-index: 200;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: transform 1s ease;
+}
+
+.m_visual .visual_txt p:nth-child(1) {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.food .filter_container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.25), 0 6px 0px rgba(0, 0, 0, -48.78);
+}
+
+.food .filter_container button {
+  font-size: 17px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.food {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.food .food_container {
+  display: flex;
+  padding-top: 168px;
+  padding-bottom: 101px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.food .food_container .filter {
+  animation: fadeIn 1s;
+}
+
+.food .food_container .food_wrap {
+  position: relative;
+  width: 370px;
+  height: 330px;
+  margin-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.food .food_container .food_wrap::after {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: #009223;
+}
+
+.food .food_container .food_wrap::before {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: background 0.4s;
+  -o-transition-timing-function: cubic-bezier(0.83, -0.07, 0.82, 1);
+  background: url(../images/icon/icon_view.png) no-repeat;
+  background-position: left 150px bottom 100px;
+  z-index: 102;
+}
+
+.food .food_container .food_wrap:hover::after {
+  opacity: 1;
+}
+
+.food .food_container .food_wrap:hover::before {
+  opacity: 1;
+  background-position: left 150px bottom 20px;
+}
+
+.food .food_container .food_wrap:hover .food_text_hover {
+  opacity: 1;
+  bottom: 130px;
+  z-index: 101;
+  width: 100%;
+}
+
+.food .food_container .food_wrap .food_img {
+  margin: 0 auto;
+  width: 259px;
+  padding-top: 46px;
+}
+
+.food .food_container .food_wrap .food_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.food .food_container .food_wrap .food_text_hover {
+  color: #ffffff;
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  transition: 0.8s;
+  padding: 20px;
+}
+
+.food .food_container .food_wrap .food_text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 45px;
+  transition: 0.5s;
+  bottom: 20px;
+}
+
+.food .food_container .food_wrap .food_text p:nth-child(1) {
+  color: #111111;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.food .food_container .food_wrap .food_text p:nth-child(2) {
+  color: #6B6666;
+  font-weight: 500;
+}
+
+.food .food_container .food_wrap .food_text p:nth-child(3) {
+  color: #ffc300;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.food .food_container .food_wrap:hover .food_text {
+  bottom: 250px;
+  z-index: 101;
+}
+
+.food .food_container .food_wrap:hover .food_text p {
+  color: #ffffff;
+}
+
+.food .food_container .food_wrap:hover .food_text p:nth-child(3) {
+  display: none;
+}

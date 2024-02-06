@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+nav ul li.main_menu:nth-child(3)>a {
+  color: #009223;
+}
+
+/* 블렛 커스텀*/
+.custom_bullet {
+  width: 14px;
+  height: 13px;
+  background-color: #dddddd;
+  border-radius: 9999px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  color: #dddddd;
+  font-weight: 900;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.custom_bullet span:nth-child(1) {
+  font-size: 14px;
+}
+
+.custom_bullet span:nth-child(2) {
+  font-size: 24px;
+}
+
+/* 액티브시 블렛 */
+.custom_bullet.active {
+  border: 4px solid #009223;
+  background-color: #009223;
+  width: 30px;
+}
+
+/* 페이지네이션 */
+.order_pagination {
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 70px;
+  gap: 5px;
+}
+
+/* 스와이퍼 */
+.swiper {
+  margin-top: 55px;
+  width: 1145px;
+}
+
+.swiper-slide {
+  display: flex !important;
+}
+
+/* 스와이퍼 이전 다음 버튼 컨테이너 */
+.nextprev_btn {
+  width: 1514px;
+  position: absolute;
+  left: 205px;
+  bottom: 305px;
+}
+
+/* 스와이퍼 이전 다음 버튼 스타일 */
+.orderswiper_next,
+.orderswiper_prev {
+  position: absolute;
+  border-radius: 9999px;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.orderswiper_prev {
+  left: 0;
+}
+
+.orderswiper_next {
+  right: 0;
+}
+
+.orderswiper_next:hover,
+.orderswiper_prev:hover {
+  background-color: #ffce32;
+}
+
+.orderswiper_next:hover::after,
+.orderswiper_prev:hover::after {
+  border-top: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+}
+
+.orderswiper_next::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-top: 5px solid #333333;
+  border-right: 5px solid #333333;
+  transform: rotate(45deg);
+  z-index: 999;
+  left: 13px;
+}
+
+.orderswiper_prev::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-top: 5px solid #333333;
+  border-right: 5px solid #333333;
+  transform: rotate(225deg);
+  z-index: 999;
+  right: 13px;
+}
+
+main .event {
+  position: relative;
+}
+
+main .event_title {
+  text-align: center;
+  color: #292929;
+  margin-top: 95px;
+}
+
+main .event_title h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+main .event_title p {
+  font-weight: 500;
+}
+
+main .event_sub_title {
+  margin-top: 120px;
+  text-align: center;
+}
+
+main .event_sub_title h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+main .event_sub_title p {
+  font-size: 22px;
+  font-weight: 900;
+  color: #009223;
+}
+
+main .event_content {
+  position: relative;
+  margin-top: 50px;
+}
+
+main .event_content .img_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+}
+
+main .event_content .event_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 9999px 0px 0px 9999px;
+  width: 160px;
+  height: 50px;
+  background-color: #009223;
+  right: 0;
+  top: 300px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+main .event_content .event_list:hover {
+  background-color: #007f1e;
+}
+
+main .event_content .video_wrap {
+  position: absolute;
+  top: 1578px;
+  right: 609px;
+}
+
+main .slide_txt {
+  position: relative;
+  background-color: #ffffff;
+  padding: 30px;
+  width: 370px;
+  color: #292929;
+}
+
+main .slide_txt p:nth-child(1) {
+  font-weight: 900;
+  font-size: 17px;
+  color: #009223;
+}
+
+main .slide_txt p:nth-child(2) {
+  position: relative;
+  font-size: 28px;
+  font-weight: 500;
+  color: #292929;
+}
+
+main .slide_txt p:nth-child(2)::after {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: #ffce32;
+}
+
+main .slide_txt p:nth-child(3) {
+  color: #666666;
+  margin-top: 38px;
+}
+
+main .slide_txt .step_btn {
+  position: absolute;
+  bottom: 30px;
+}
+
+main .slide_txt .step_btn a {
+  background-color: #009223;
+  border-radius: 9999px;
+  padding: 8px 14px;
+  color: #ffffff;
+  margin-right: 15px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+main .slide_txt .step_btn a:hover {
+  background-color: #047f21;
+}
+
+main .slide_txt .step_btn a::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/icon/ico_searchbar_white.png) no-repeat center;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 1px;
+  margin-left: 5px;
+}
+
+main .slide_txt span {
+  font-size: 14px;
+}
