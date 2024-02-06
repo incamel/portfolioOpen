@@ -8,4 +8,4 @@
 아직 `scss` 사용이 미흡하여 범용성이 부족하지만, 
 모든 작업에 적극 활용하고 있습니다.
 
-<a href='https://inyeob.com/baemin/'>사이트 바로가기</a> 
+<a href='https://inyeob.com/baemin/'>사이트 바로가기</a>

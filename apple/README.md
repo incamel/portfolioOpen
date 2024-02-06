@@ -1,4 +1,4 @@
-# Apple Publishing
+# Apple  Publishing
 
 **애플의 아이폰15 를 소개하는 서브 페이지입니다.**
 

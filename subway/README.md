@@ -8,4 +8,4 @@
 새롭게 리디자인 해서 제작되었습니다. <br>
 각 환경에 맞는 최적화된 사용자 경험을 제공함으로써, 편의성을 강화하였습니다.
 
-<a href='https://inyeob.com/subway/'>사이트 바로가기</a>   
+<a href='https://inyeob.com/subway/'>사이트 바로가기</a>  
